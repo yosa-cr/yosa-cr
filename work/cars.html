@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Information></Details></title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function subMit(){
+            var input1 = document.querySelector("#input1").value;
+            var input2 = document.querySelector("#input2").value;
+            var input3 = document.querySelector("#input3").value;
+            var input4 = document.querySelector("#input4").value;
+            var input4 = document.querySelector("#input5").value;
+            var input4 = document.querySelector("#input6").value;
+            var input4 = document.querySelector("#input7").value;
+            var input4 = document.querySelector("#input8").value;
+    
+         if(input1.length >0 && input2.length > 0 && input3.length > 0){
+    
+            alert("You have successfully connected");
+    
+         }
+         else{
+            alert("Finish all the fields")
+         }
+    
+         
+         var li =document.getElementById("li")
+         li.innerHTML = document.querySelector("input").value
+         document.querySelector("task-list").append(li)
+    
+         document.querySelector("input1").value=""
+         document.querySelector("input2").value=""
+         document.querySelector("input3").value=""
+         document.querySelector("input4").value=""
+         document.querySelector("input5").value=""
+         document.querySelector("input6").value=""
+         document.querySelector("input7").value=""
+         document.querySelector("input8").value=""
+    
+    
+         document.querySelector("#add-btn").disabled =true;
+        
+    
+        }
+        function checkinput(){
+            if (document.querySelector("#input1").value.length> 0 &&
+            document.querySelector("#input2").value.length> 0 &&
+            document.querySelector("#input3").value.length> 0 &&
+            document.querySelector("#input4").value.length> 0 && 
+            document.querySelector("#input5").value.length> 0 &&
+            document.querySelector("#input6").value.length> 0 &&
+            document.querySelector("#input7").value.length> 0 &&
+            document.querySelector("#input8").value.length> 0){
+
+    
+             document.querySelector("#add-btn").disabled = false;
+            }
+            else{
+            document.querySelector("#add-btn").disabled = true;
+    
+        }
+             
+       }
+         
+        </script>
+</head>
+<body>
+    <section class="">
+        <h1>Welcome  To The  Carbond<a href="payment.html" id="link">payment</a><a href="cartype.html" id="link">cartype</a>
+        <h2>cars</h2>
+    </section>
+        
+      <form action="#">
+        <div id="menu-div">
+            
+            
+            <p><input type="car_id" name="car_id" id="input1" placeholder="Car_id"onkeyup="checkinput()" ></p>
+            <p><input type="type-id" name="type-id" id="input2" placeholder="type-id"onkeyup="checkinput()"></p>
+            
+            <p><input type="Model" name="Model" id="input3" placeholder="model"onkeyup="checkinput()"></p>
+           
+            <p><input type="make" name="make" id="input4" placeholder="make"onkeyup="checkinput()"></p>
+           
+            <p><input type="colour" name="colour" id="input5" placeholder="colour"onkeyup="checkinput()"></p>
+          
+            <p><input type="transmission" name="transmission" id="input6" placeholder="transmission"onkeyup="checkinput()"></p>
+           
+            <p><input type="capacity" name="capacity" id="input7" placeholder="capacity" onkeyup="checkinput()"></p>
+            <p><input type="price" name="price" id="input8" placeholder="price"onkeyup="checkinput()" ></p>
+            <ul id="task-list">
+            <p><button id="add-btn"onclick="subMit()">Record</button></p> 
+            </ul>
+        </div>
+
+        
+          <table>
+            <tr>
+
+          <table width="500px" border="4px">
+                <th>car_id</th>
+                <th>type-id</th>
+                <th>Model</th>
+                <th>colour</th>
+                <th>transimission</th>
+                <th>capacity</th>
+                <th>price</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>001</td>
+                <td>2017</td>
+                <td>browm</td>
+                <td>manual</td>
+                <td>camber</td>
+                <td>400000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>002</td>
+                <td>2016</td>
+                <td>grey</td>
+                <td>automatic</td>
+                <td>daytime Driving Lights</td>
+                <td>500000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>003</td>
+                <td>2015</td>
+                <td>light green</td>
+                <td>manual</td>
+                <td>E10</td>
+                <td>300000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>004</td>
+                <td>2008</td>
+                <td>yellow</td>
+                <td>automatic</td>
+                <td>five value technology</td>
+                <td>700000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>005</td>
+                <td>2005</td>
+                <td>brown</td>
+                <td>manual</td>
+                <td>galvanisation</td>
+                <td>550000</td>
+            </tr>
+            </tr>
+            </tr>
+            
+          </table>
+          
+          
+    
+</body>
+</html>

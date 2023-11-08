@@ -1,0 +1,107 @@
+body{
+    background-color:green;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 80px;
+    text-align: left;
+
+}
+
+h1{
+    color:black;
+    text-align: center;
+    background-color:WHITE;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    border-radius: 12px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+}
+
+
+h2{
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: aliceblue;
+    width: 300px;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+#link{
+    
+    background-color:green;
+    font-weight: bold;
+    font-size: 30px;
+    width: 10px;
+    border-bottom: 5px;
+    align-items: center;
+    margin-left: 50px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+
+}
+
+#menu-div{
+    width: 300px;
+    padding: 3px;
+    
+    border-radius: 20px;
+    border-bottom: 10px;
+    
+    font-size: 18px;
+    text-align:left;
+    padding-top: 8px;
+    
+   
+}
+
+#btn-SAVE{
+    width: 200PX;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 45px;
+}
+
+
+
+table{
+    
+    width:1000px;
+    border-bottom: 300px;
+    border-collapse: collapse;
+    border-top:300PX ;
+    border-left: 300px;
+    border-right: 300px;
+    border-color: chocolate;
+    text-align: center;
+    background-color: aliceblue;
+    
+
+}
+
+
+    
+
+th{
+    font-size: 25px;
+    background-color:aliceblue;
+}
+
+tr{
+    font-size: 20px;
+}

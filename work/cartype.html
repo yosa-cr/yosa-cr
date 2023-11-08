@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartype Information></Details></title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function subMit(){
+        var input1 = document.querySelector("#input1").value;
+        var input2 = document.querySelector("#input2").value;
+        var input3 = document.querySelector("#input3").value;
+       
+     if(input1.length >0 && input2.length > 0 && input3.length > 0){
+
+        alert("You have successfully connected");
+
+     }
+     else{
+        alert("Finish all the fields")
+     }
+
+     
+     var li =document.getElementById("li")
+     li.innerHTML = document.querySelector("input").value
+     document.querySelector("task-list").append(li)
+
+     document.querySelector("input1").value=""
+     document.querySelector("input2").value=""
+     document.querySelector("input3").value=""
+    
+
+     document.querySelector("#add-btn").disabled =true;
+    
+
+    }
+    function checkinput(){
+        if (document.querySelector("#input1").value.length> 0 &&
+        document.querySelector("#input2").value.length> 0 &&
+        document.querySelector("#input3").value.length> 0 ){
+
+
+         document.querySelector("#add-btn").disabled = false;
+        }
+        else{
+        document.querySelector("#add-btn").disabled = true;
+
+    }
+         
+   }
+     
+    </script>
+<body>
+    <section class="">
+        <h1>Welcome  To The  Carbond<a href="payment.html" id="link">payment</a><a href="cars.html" id="link">cars</a><a href="customer.html" id="link">customer</a>
+            
+            
+        <h2>cartype</h2>
+    </section>
+        
+      <form action="#">
+        <div id="menu-div"> 
+            
+            
+            <p><input type="type-id" name="type-id" id="input1" placeholder="type-id"></p>
+            
+            <p><input type="type-name" name="type-name" id="input2" placeholder="type-name"></p>
+           
+            <p><input type="description" name="description" id="input3" placeholder="description"></p>
+           
+           <ul id="task-list">
+            <p><button id="add-btn" onclick="subMit()">Record</button></p> 
+        </ul>
+        </div>
+
+        
+          <table>
+            <tr>
+
+          <table width="500px" border="4px">
+                <th>type_id</th>
+                <th>type-name</th>
+                <th>description</th>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>suv</td>
+                <td>grey in colour</td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hatchback</td>
+                <td>A hatchback is a car body configuration with a rear door that swings upward to provide access to the main interior of the car as a cargo area</td>
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Crossover</td>
+                <td>A crossover, an SUV-like vehicle built on a unibody construction, drives much like cars, making it one of the most popular car types for many buyers</td>
+                
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>convertible</td>
+                <td>a roof that folds down </td>
+                
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>sedan</td>
+                <td>sedan is a car with two rows of seats, a fixed roof and three separate compartments for engine, driver/passengers.</td>
+               
+            </tr>
+            </tr>
+            
+          </table>
+          
+          
+    
+</body>
+</html>

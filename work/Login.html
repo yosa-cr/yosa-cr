@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login in here</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script>
+    function subMit(){
+        var input1 = document.querySelector("#input1").value;
+        var input2 = document.querySelector("#input2").value;
+        var input3 = document.querySelector("#input3").value;
+        var input4 = document.querySelector("#input4").value;
+
+     if(input1.length >0 && input2.length > 0 && input3.length > 0){
+
+        alert("Mrs "  + input1 + " you have successfully connected");
+
+     }
+
+     
+     var li =document.getElementById("li")
+     li.innerHTML = document.querySelector("input1").value
+     document.querySelector("task-list").append(li)
+
+     document.querySelector("input1").value=""
+     document.querySelector("input2").value=""
+     document.querySelector("input3").value=""
+     document.querySelector("input4").value=""
+
+
+     document.querySelector("#btn-login").disabled ="true";
+    
+
+    }
+    function checkinput(){
+        if (document.querySelector("#input1").value.length> 0 &&
+        document.querySelector("#input2").value.length> 0 &&
+        document.querySelector("#input3").value.length> 0 &&
+        document.querySelector("#input4").value.length> 0 ){
+
+         document.querySelector("#btn-login").disabled = false;
+        }
+        else{
+        document.querySelector("#btn-login").disabled = true;
+
+    }
+         
+   }
+     
+    </script>
+    
+    
+</head>
+<body>
+    <section class="">
+        <h1>Welcome To The Carbond<a href="customer.html" id="li">home</a></h2>
+        <h2>Login in here</h2>
+    </section>
+    <br>
+    <form id="grpbtn" action="" class="input-group">
+        <div class="container">
+        <p><form action="form-group" id="space" method="POST"></form></p>
+        <Label for= "username">
+        <p><input type="text" name="Name" id="input1" placeholder=" Name" onkeyup="checkinput()"></p>
+        <p><input type="text" name="Gender" id="input2" placeholder="Gender" onkeyup="checkinput()"></p>
+        <p><input type="text" name="Address" id="input3" placeholder="Address" onkeyup="checkinput()"></p>
+        <p><input type="text" name="Contact" id="input4" placeholder="Contact" onkeyup="checkinput()"></p>
+        <p><button id="btn-login" onclick="subMit()" disabled="true">LOGIN</button></p>
+        <P>or sign in using</P>
+        <a href="https://www.twitter.com" ><img src="twitter.png" id="image"></a> <a href="https://www.facebook.com"><img src="facebook (1).jpeg" id="image">
+            
+        </a>
+    </p>
+        
+        
+            
+        
+    </div>
+    
+</form> 
+</body>
+</html>
+    
+</body>
+</html>

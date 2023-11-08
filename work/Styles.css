@@ -1,0 +1,95 @@
+body{
+    background-color:green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 80px;
+    
+    
+    
+
+}
+
+h1{
+    color:greenyellow;
+    text-align: left;
+    background-color: aliceblue;
+    font-weight: bold;
+    margin-top: -70px;
+    
+    
+}
+
+h2{
+    color:aquamarineS;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    border-bottom: 10px;
+    
+    font-size: 15px;
+    text-align:left;
+    text-decoration-color: greenyellow;
+    
+}
+
+#li{
+    
+    background-color:;
+    font-weight: bold;
+    font-size: 22px;
+    width: 5px;
+    border-right: 10px;
+    margin-left: 50px;
+    
+    
+}
+
+.container {
+    
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:antiquewhite;
+    border-radius: 50px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    border-top: 10px;
+    border-bottom: 10px;
+}
+
+#image{
+    width: 70px;
+    
+    
+       
+}
+
+#btn-LOGIN{
+    width: 200PX;
+    background-color:green;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 40px;
+    
+}
+
+p{
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    font-weight:bold ;
+}
+
+#img{
+    width:1150px;
+    height: 200px;
+}

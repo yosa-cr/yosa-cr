@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customers</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<script>
+    function subMit(){
+        var input1 = document.querySelector("#input1").value;
+        var input2 = document.querySelector("#input2").value;
+        var input3 = document.querySelector("#input3").value;
+        var input4 = document.querySelector("#input4").value;
+        var input4 = document.querySelector("#input5").value;
+        var input4 = document.querySelector("#input6").value;
+
+     if(input1.length >0 && input2.length > 0 && input3.length > 0){
+
+        alert("You have successfully connected");
+
+     }
+     else{
+        alert("Finish all the fields")
+     }
+
+
+     
+     var li =document.getElementById("li")
+     li.innerHTML = document.querySelector("input1").value
+     document.querySelector("task-list").append(li)
+
+     document.querySelector("input1").value=""
+     document.querySelector("input2").value=""
+     document.querySelector("input3").value=""
+     document.querySelector("input4").value=""
+     document.querySelector("input5").value=""
+     document.querySelector("input6").value=""
+
+
+     document.querySelector("#btn-login").disabled ="true";
+    
+
+    }
+    function checkinput(){
+        if (document.querySelector("#input1").value.length> 0 &&
+        document.querySelector("#input2").value.length> 0 &&
+        document.querySelector("#input3").value.length> 0 &&
+        document.querySelector("#input4").value.length> 0 &&
+        document.querySelector("#input5").value.length> 0 &&
+        document.querySelector("#input6").value.length> 0 ){
+
+         document.querySelector("#btn-login").disabled = false;
+        }
+        else{
+        document.querySelector("#btn-login").disabled = true;
+
+    }
+         
+   }
+     
+    </script>
+    
+<body>
+    <section class="#">
+        <h1>Welcome To Carbond<a href="cars.html" id="link">cars</a><a href="Login.html" id="link">Login</a>
+            <h2>customer</h2>
+    </section>
+    <section>
+        
+            
+    </section>
+
+    <form action="#">
+      <div id="menu-div"> 
+
+        <p><input type="customer_id" name="customer_id" id="input1" placeholder="customer_id" onkeyup="checkinput()"></p>
+        <p><input type="customer-name" name=customer_name" id="input2" placeholder="customer_name" onkeyup="checkinput()"></p>
+        <p><input type="Gender" name="Gender" id="input3" placeholder="Gender" onkeyup="checkinput()"></p>
+         
+        <p><input type="Address" name="Address" id="input4" placeholder="Address" onkeyup="checkinput()"></p>
+        <p><input type="Contact" name="Contact" id="input5" placeholder="Contact" onkeyup="checkinput()"></p>
+        <p><input type="balance" name="balance" id="input6" placeholder="balance" onkeyup="checkinput()"></p>
+         <ul id="task-list">
+        <p><button id="add-btn" onclick="subMit">Record</button></p>
+        </ul> 
+        
+          
+      
+      </div>
+       
+          
+          <table>
+
+            <table width="1000px" border="1px" height="200">
+
+            <tr>
+                <th>customer_id</th>
+                <th>customer_name</th>
+                <th>Gender</th>
+                <th>contact</th>
+                <th>balance</th>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>were</td>
+                <td>M</td>
+                <td>+256778056121</td>
+                <td>300000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>kile</td>
+                <td>f</td>
+                <td>+256785003117</td>
+                <td>350000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sarah</td>
+                <td>F</td>
+                <td>+256757071269</td>
+                <td>48000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Kirabo</td>
+                <td>F</td>
+                <td>+256752333654</td>
+                <td>80000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Mildred</td>
+                <td>F</td>
+                <td>+256778302050</td>
+                <td>190000</td>
+            </tr>
+            
+          </table>
+          <section class="featured">
+        
+            
+
+            
+</body>
+</html>
